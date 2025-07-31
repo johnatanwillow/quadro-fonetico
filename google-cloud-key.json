@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "compelling-art-467517-s6",
+  "private_key_id": "9ea4fec8db31b0faa0ad87a06e832b513f3511b5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDo6BGo/K7MLpjd\nQq6ycglWZihu/U4XileUyekgcfbLMCl+TZ4n5utPtxFQaTKGrY7v+Mw69JFUaiVs\nrO/kK8P6uGQcF9jewwolvIEvzLtUXxvpG/gfjxHPF5BtjG+vYUlXe3XdN55VMHq3\nF7Tgj8sx+L8ilnR8fLWQr+DywAvJJq3vdWTbF04PO0ZGkJdBXnGqa//4zlNI70BC\nKFAGu2qW5+XxKag8Bqkg18OrSCEkma1t1kSWRKToRoWcPaIFXDUUEwdBgaSPWWzX\nxVZWFtF4OojXXSdTt37oYw2ISHssn3cyMW8kCU28aFrlEMCFjOjr+LAfxBaITgXY\npyGCtPS7AgMBAAECggEAAP4WeJt1WGGx4e5cY16TCi8TRC3RmGBfQ3YPGdgnDqkv\nKvDETw+CJhBjgzbtRA1gb4/vcAO8zIaUaxskayQUCLo0uLlbAatyQOjqUAWxMGQk\ngwVfWXaCMRAqgGYnhovzKRAi6bv/XypscAZzseC4tauqIW112wzP3CAhdyLLPFl9\nVpGD3YnndlXDTfkKUkF9D1LItOZ1CfVk4LW84iVWzjUFugCf3jtQSxYFhmaTlxib\nTEl+7Zcz26CT/PEjK297oGA5IbyzTpS1J3aIJA2a40Ezud2ag/RVRvfrihlBIthO\n3/LLnfzp05zk6ak4Oz7ofaBMLYYzREYw5Y0knK/cwQKBgQD32htsbjMiDehYfB4f\nOMuo4h3mTxNZyThnzZ9FfG9EzN8TH13pJoYCfStU5icP9PTRfPz44fHseeyiIwEi\nnzvUXS1ee/foJ05yiGhOeubMtDrgC/hJnVa0nsqq1c0RyzGEml3bhYcekWxA9pRX\nz+sL3/Fg/wBRVQ3DGUlGjnqgmwKBgQDwkC7A2tXl3FJXtOruh8P+HnrbOqsvl2lY\nKdr+VoAticREuFUYyHhxofHMRX6SNNUUNtUKBWPbKCg4PjIM81fXnLb4St09QvjB\n2MCFKM9Ns0lE0ggzGgk8ls29KfaMQIww80R1LSWDaGSB6vXDjW9MQR/5yI2eh2w7\nppTVeqruYQKBgQCZHcYJU38FT8A1QeA9+5FdsOs1x641rqjI/++gNsJqp4I8Rwl2\nKtVpHjixx0lkgzjnXibN/o+9PolglO1znRmSFUoc78r0Qawl930w1p5U4hbpKJvn\npmrVRLABn/mDP5tExzSqlDAoQ0C0VWDJaupTOLLe8Eoa9Md+utVY4FaDdwKBgHMV\nBsjL57fnBp1et2UVHfXbrvphvrMtw/+hRlqWFwux9GrLpCoO/U+fIYWPWVWoYKci\n9BevLG4Tb+o4FsmLQGKtXfq6FczQ1SAnCTKqq0GIm2yI7dNEiVaq7hGomYHO/0IL\nnpxP1LpgnnRoatn6N1xLa3ibMOS99FE1B854uH0BAoGBAK/uu4JGEFKOiljxR24Z\nmAQlsYGE8+JMKEd4q7rNY9TVC63eI79r6M9E1eclb6/5/zSpr1Lrwb/eaoPch12J\nZ3voPPgbAYVFGNKJ0PH2mWsGrpYgAWDiI8ufrlguij456frU3mZ6xppAtWdvv8Ad\nNKMWyn8Mv89E/Xc/6r/zZvVX\n-----END PRIVATE KEY-----\n",
+  "client_email": "tts-audio-generator@compelling-art-467517-s6.iam.gserviceaccount.com",
+  "client_id": "100320339437062221605",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/tts-audio-generator%40compelling-art-467517-s6.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

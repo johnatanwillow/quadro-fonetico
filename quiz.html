@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário Sonoro - Prof. Johnatan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/salgueiro.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <img src="img/JWL IMAGEM Prof Johnatan.jpg" alt="Prof. Johnatan Willow Dias de Andrade" class="jwl-profile-image">
+        <div class="header-content">
+            <h1>JWL LANGUAGE</h1>
+            <p>"GETTING BETTER EVERY DAY"</p>
+        </div>
+    </header>
+    <a href="index.html" class="back-home-button">← Voltar para a Home</a>
+
+    <div class="quiz-container">
+        <h1>Qual é a pronúncia correta? 👂</h1>
+        <p>Pergunta <span id="question-counter">1 de 10</span></p>
+        <button id="play-sound-button" class="action-button">Ouvir Som</button>
+        <div id="quiz-content">
+            
+            <div id="options-grid" class="phoneme-grid quiz-options-grid">
+            </div>
+            
+            <button id="next-button" class="action-button next-button" style="display:none;">Próxima Pergunta</button>
+        </div>
+
+        <div id="quiz-completed" style="display:none;">
+            <h2>Questionário Concluído!</h2>
+            <p>Seu resultado será exibido na próxima página.</p>
+            <a id="view-results-button" href="results.html" 
+            class="action-button">Ver Resultados</a>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <img src="img/JWL.png" alt="Logo JWL" class="willow-logo-footer">
+        <p>© 2025 Prof. Johnatan Willow Dias de Andrade. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/quiz_logic.js"></script>
+</body>
+</html>

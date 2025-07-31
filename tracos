@@ -1,0 +1,14 @@
+FONETICA DE INGLES/
+├── audio/
+│   ├── ... (seus arquivos MP3 de inglês e francês, ex: en_i.mp3, fr_a.mp3)
+├── css/
+│   └── style.css
+├── img/
+│   ├── favicon.ico
+│   ├── jwl_johnatan.png
+│   └── willow_logo.png
+├── js/
+│   └── script.js
+├── index.html        <-- NOVA PÁGINA HOME
+├── english.html      <-- SEU ANTIGO index.html, RENOMEADO
+└── french.html       <-- NOVA PÁGINA PARA O FRANCÊS

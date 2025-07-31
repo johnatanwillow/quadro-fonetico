@@ -1,0 +1,423 @@
+:root {
+    --primary-color: #6a1b9a; /* Roxo escuro vibrante */
+    --secondary-color: #ff9800; /* Laranja energético */
+    --accent-color: #00bcd4; /* Azul ciano vivo */
+    --text-dark: #37474f; /* Cinza azulado escuro */
+    --text-light: #ffffff; /* Branco */
+    --bg-gradient-start: #f3e5f5; /* Rosa claro para o degradê */
+    --bg-gradient-end: #e1bee7; /* Roxo claro para o degradê */
+    --box-shadow-light: rgba(0, 0, 0, 0.1);
+    --box-shadow-medium: rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--text-dark);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background:
+        linear-gradient(rgba(243, 229, 245, 0.95), rgba(225, 190, 231, 0.95)),
+        url(img/JWL.png) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* --- Estilos para o Cabeçalho (Home) --- */
+.main-header {
+    background-color: var(--primary-color);
+    width: 100%;
+    max-width: 1000px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px var(--box-shadow-medium);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+    color: var(--text-light);
+}
+
+.jwl-profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--secondary-color);
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.5);
+}
+
+.header-content {
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 3.5em;
+    font-weight: 800;
+    margin: 0;
+    line-height: 1.1;
+    color: var(--text-light);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.header-content p {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin: 5px 0 0;
+    color: var(--secondary-color);
+    font-style: italic;
+}
+
+/* --- Estilos para o Rodapé (Home e Páginas de Idioma) --- */
+.main-footer {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 40px;
+    font-size: 1.0em;
+    color: var(--text-dark);
+    text-align: center;
+    padding: 15px 25px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.willow-logo-footer {
+    width: 90px;
+    height: auto;
+    margin: 10px 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Estilos para o botão "Voltar para a Home" --- */
+.back-home-button {
+    text-decoration: none;
+    background-color: #29c611;
+    color: var(--text-light);
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.back-home-button:hover {
+    background-color: #78909c;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Estilos para a Home e Quadros Fonéticos --- */
+.home-container,
+.phonetic-container,
+.quiz-container {
+    background-color: var(--text-light);
+    border-radius: 20px;
+    box-shadow: 0 12px 30px var(--box-shadow-medium);
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    animation: fadeIn 1s ease-out;
+    max-width: 1000px;
+    
+}
+
+.home-container {
+    max-width: 700px;
+    margin-top: 50px;
+    
+}
+
+.home-intro-text {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: #546e7a;
+}
+
+.home-buttons {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 40px;
+   
+}
+
+.home-button, .start-quiz-button {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    padding: 20px 30px;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.8em;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 6px 12px var(--box-shadow-light);
+    display: block;
+}
+
+.home-button.english-btn { background-color: #4CAF50; }
+.home-button.french-btn { background-color: #007bff; }
+.start-quiz-button { background-color: #558b2f; }
+
+.home-button:hover, .start-quiz-button:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 20px var(--box-shadow-medium);
+    opacity: 0.9;
+}
+
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    font-size: 3.2em;
+    font-weight: 800;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.08);
+}
+
+h2 {
+    color: var(--secondary-color);
+    margin-top: 35px;
+    margin-bottom: 15px;
+    font-size: 2.3em;
+    font-weight: 700;
+    border-bottom: 4px solid var(--primary-color);
+    padding-bottom: 10px;
+    display: inline-block;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.phoneme-grid, .word-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+    justify-items: center;
+}
+.quiz-options-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Reduz o tamanho mínimo para os botões ficarem menores */
+    margin-top: 30px;
+    gap: 30px; /* Aumenta o espaçamento entre os botões */
+    justify-items: center; /* Centraliza os botões dentro de cada célula da grade */
+}
+
+/* Estilos para os Botões dos Quadros Fonéticos */
+.phoneme-button, .word-button {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 15px 20px; /* Diminui o preenchimento para os botões ficarem menores */
+    border: none;
+    border-radius: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 15px 15px var(--box-shadow-light);
+    text-align: center;
+    line-height: 1.2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.phoneme-button span {
+    font-size: 1.8em; /* Ajuste o tamanho do símbolo fonético */
+}
+
+.phoneme-button small, .phoneme-button big {
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.phoneme-button:hover, .word-button:hover {
+    background-color: #8e24aa;
+    transform: translateY(-7px) scale(1.03);
+    box-shadow: 0 12px 25px var(--box-shadow-medium);
+}
+
+.phoneme-button:active, .word-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px var(--box-shadow-light);
+}
+
+.word-button {
+    background-color: var(--accent-color);
+    font-size: 1.6em;
+    padding: 22px 15px;
+}
+.word-button small, .word-button big {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin-top: 5px;
+}
+
+.word-button:hover { background-color: #26c6da; }
+
+/* Estilos de Quiz e Resultados */
+.quiz-container { max-width: 800px; margin-top: 20px;  }
+.start-quiz-button {
+    text-decoration: none;
+    background-color: #558b2f;
+    color: var(--text-light);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 4px 8px var(--box-shadow-light);
+    margin-top: 20px;
+    display: inline-block;
+}
+.start-quiz-button:hover {
+    background-color: #7cb342;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px var(--box-shadow-medium);
+}
+/* Estilos gerais para todos os botões de ação no quiz */
+.action-button {
+    background-color: var(--secondary-color); /* A cor de fundo é o laranja energético */
+    color: var(--text-light);
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    box-shadow: 0 4px 8px var(--box-shadow-light);
+    margin: 20px 0 0;
+    display: inline-block;
+}
+
+.action-button:hover {
+    background-color: #f57c00;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px var(--box-shadow-medium);
+}
+.phoneme-button.correct { background-color: #4CAF50; }
+.phoneme-button.incorrect { background-color: #F44336; }
+.results-title { color: var(--primary-color); margin-bottom: 10px; }
+.score-text { font-size: 1.5em; font-weight: 600; color: var(--text-dark); }
+#final-score-display { font-weight: 800; color: var(--secondary-color); }
+.review-list { list-style: none; padding: 0; margin: 30px 0; }
+.review-item {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: left;
+    border-left: 5px solid;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.review-item.correct { border-left-color: #4CAF50; }
+.review-item.incorrect { border-left-color: #F44336; }
+.review-question-info { flex-grow: 1; }
+.review-item p { margin: 5px 0; font-size: 1em; }
+.review-item p strong { color: var(--primary-color); }
+.review-item .answer-text, .review-item .correct-text { font-weight: 700; }
+.review-item .answer-text { color: var(--text-dark); }
+.review-item .correct-text { color: #4CAF50; }
+.review-audio-button {
+    background-color: #546e7a;
+    color: var(--text-light);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.review-audio-button:hover { background-color: #78909c; }
+.ranking-section { margin-top: 40px; }
+.ranking-table { width: 100%; border-collapse: collapse; margin-top: 20px; text-align: left; }
+.ranking-table th, .ranking-table td { padding: 12px; border-bottom: 1px solid #ddd; }
+.ranking-table th { background-color: var(--primary-color); color: var(--text-light); font-weight: 700; }
+.ranking-table tr:nth-child(even) { background-color: #f2f2f2; }
+#ranking-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+#player-name {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 80%;
+    max-width: 300px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    body { padding: 15px; }
+    .main-header { padding: 20px; flex-direction: column; text-align: center; gap: 15px; }
+    .jwl-profile-image { width: 120px; height: 120px; }
+    .header-content h1 { font-size: 2.5em; }
+    .header-content p { font-size: 1.2em; }
+    .home-container, .phonetic-container, .quiz-container { padding: 25px; }
+    .home-container h1 { font-size: 2.8em; }
+    .home-intro-text { font-size: 1.1em; margin-bottom: 30px; }
+    .home-buttons { flex-direction: column; gap: 20px; margin-top: 30px; }
+    .home-button, .start-quiz-button { font-size: 1.5em; padding: 18px 25px; }
+    h1 { font-size: 2.8em; }
+    h2 { font-size: 2em; border-bottom-width: 3px; }
+    .phoneme-button, .word-button { padding: 12px 8px; }
+    .phoneme-button span { font-size: 1.4em; }
+    .phoneme-button small, .phoneme-button big { font-size: 0.7em; }
+    .word-button { padding: 15px 10px; font-size: 1.3em; }
+    .word-button small, .word-button big { font-size: 0.6em; }
+    .phoneme-grid, .word-grid { grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 15px; }
+    .willow-logo-footer { width: 70px; }
+    .copyright { font-size: 1em; padding: 10px 20px; }
+}
+
+@media (max-width: 480px) {
+    body { padding: 10px; }
+    .main-header { padding: 15px; }
+    .jwl-profile-image { width: 100px; height: 100px; }
+    .header-content h1 { font-size: 2em; }
+    .header-content p { font-size: 1em; }
+    .home-container, .phonetic-container, .quiz-container { padding: 20px; }
+    .home-container h1 { font-size: 2.2em; }
+    .home-intro-text { font-size: 1em; margin-bottom: 25px; }
+    .home-buttons { flex-direction: column; gap: 15px; margin-top: 25px; }
+    .home-button, .start-quiz-button { font-size: 1.3em; padding: 15px 20px; }
+    h1 { font-size: 2.2em; }
+    h2 { font-size: 1.6em; border-bottom-width: 2px; }
+    .phoneme-button, .word-button { padding: 10px 6px; }
+    .phoneme-button span { font-size: 1.2em; }
+    .phoneme-button small, .phoneme-button big { font-size: 0.6em; }
+    .word-button { padding: 12px 8px; font-size: 1.2em; }
+    .word-button small, .word-button big { font-size: 0.5em; }
+    .phoneme-grid, .word-grid { grid-template-columns: repeat(auto-fill, minmax(70px, 1fr)); gap: 10px; }
+    .willow-logo-footer { width: 60px; }
+    .copyright { font-size: 1em; padding: 8px 15px; }
+}
