@@ -129,8 +129,7 @@ body {
     width: 100%;
     box-sizing: border-box;
     animation: fadeIn 1s ease-out;
-    max-width: 1000px;
-    
+    max-width: 1000px;    
 }
 
 .home-container {
@@ -168,7 +167,7 @@ body {
     text-decoration: none;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     box-shadow: 0 6px 12px var(--box-shadow-light);
-    display: block;
+    display: flex;
 }
 
 .home-button.english-btn { background-color: #4CAF50; }
@@ -294,7 +293,7 @@ h2 {
 }
 /* Estilos gerais para todos os botões de ação no quiz */
 .action-button {
-    background-color: var(--secondary-color); /* A cor de fundo é o laranja energético */
+    background-color: var(--secondary-color);
     color: var(--text-light);
     padding: 15px 20px;
     border: none;
@@ -305,14 +304,14 @@ h2 {
     text-decoration: none;
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     box-shadow: 0 4px 8px var(--box-shadow-light);
-    margin: 20px 0 0;
-    display: inline-block;
+    margin: 0 auto;
+    display: block;    
 }
 
 .action-button:hover {
     background-color: #f57c00;
     transform: translateY(-2px);
-    box-shadow: 0 6px 12px var(--box-shadow-medium);
+    box-shadow: 0 6px 12px var(--box-shadow-medium);    
 }
 .phoneme-button.correct { background-color: #4CAF50; }
 .phoneme-button.incorrect { background-color: #F44336; }
