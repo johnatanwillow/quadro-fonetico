@@ -305,13 +305,15 @@ h2 {
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     box-shadow: 0 4px 8px var(--box-shadow-light);
     margin: 0 auto;
-    display: block;    
+    display: inline-block;  
+    flex-direction: column;  
 }
 
 .action-button:hover {
     background-color: #f57c00;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px var(--box-shadow-medium);    
+    
 }
 .phoneme-button.correct { background-color: #4CAF50; }
 .phoneme-button.incorrect { background-color: #F44336; }
